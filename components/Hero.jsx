@@ -2,8 +2,8 @@ export default function Hero() {
     return (
         <section id="home" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-pink-50 via-purple-50 to-pink-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-            Welcome to Mirabel
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent leading-tight">
+            Mirabel Beauty Centre
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto">
             Where beauty meets elegance. Experience luxury treatments in a serene, modern atmosphere.

@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Service from '../components/Service';
 import About from '../components/About'
+import Stories from '../components/Stories';
 import Testimonial from '../components/Testimonial';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer'
@@ -23,6 +24,8 @@ export default function MirabelSalon() {
       <Service />
 
       <About />
+
+      <Stories />
 
       <Testimonial />
 
