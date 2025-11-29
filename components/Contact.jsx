@@ -75,22 +75,22 @@ export default function Contact(){
                 <input 
                   type="text" 
                   placeholder="Your Name" 
-                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500"
+                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500 text-gray-800 placeholder-gray-400"
                 />
                 <input 
                   type="email" 
                   placeholder="Your Email" 
-                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500"
+                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500 text-gray-800 placeholder-gray-400"
                 />
                 <input 
                   type="tel" 
                   placeholder="Your Phone" 
-                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500"
+                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500 text-gray-800 placeholder-gray-400"
                 />
                 <textarea 
                   placeholder="Your Message" 
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500"
+                  className="w-full px-4 py-3 rounded-lg border border-pink-200 focus:outline-none focus:border-pink-500 text-gray-800 placeholder-gray-400"
                 ></textarea>
                 <button 
                   onClick={() => alert('Thank you for your message! We will get back to you soon.')}
