@@ -26,15 +26,15 @@ export default function Footer() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
               <div className="flex space-x-4 mb-4">
-                <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+                <a href="https://www.instagram.com/mirabel_alain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+                <a href="https://www.facebook.com/mirabelalain" className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
                   <Facebook className="w-5 h-5" />
                 </a>
               </div>
-              <p className="text-pink-100">hello@mirabelsalon.com</p>
-              <p className="text-pink-100">(555) 123-4567</p>
+              <p className="text-pink-100">Mirabelbc@gmail.com</p>
+              <p className="text-pink-100">+971 50 535 0637</p>
             </div>
           </div>
           

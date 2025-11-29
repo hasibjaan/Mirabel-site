@@ -16,15 +16,19 @@ export default function Contact(){
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-pink-500 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Location</h3>
-                  <p className="text-gray-600">123 Beauty Lane, Style District<br/>New York, NY 10001</p>
+                  <h3 className="font-semibold text-lg mb-1 text-gray-900">Location</h3>
+                  <p className="text-gray-600">
+                    Near muraba lulu centre<br/>
+                    Welcome Trade Building floor no 2<br/>
+                    New York, NY 10001
+                  </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <Clock className="w-6 h-6 text-pink-500 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Hours</h3>
+                  <h3 className="font-semibold text-lg mb-1 text-gray-900">Hours</h3>
                   <p className="text-gray-600">Mon - Fri: 9:00 AM - 7:00 PM<br/>Sat: 10:00 AM - 6:00 PM<br/>Sun: Closed</p>
                 </div>
               </div>
@@ -32,24 +36,34 @@ export default function Contact(){
               <div className="flex items-start space-x-4">
                 <Phone className="w-6 h-6 text-pink-500 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <h3 className="font-semibold text-lg mb-1 text-gray-900">Phone</h3>
+                  <p className="text-gray-600">+971 50 535 0637</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <Mail className="w-6 h-6 text-pink-500 mt-1 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Email</h3>
-                  <p className="text-gray-600">hello@mirabelsalon.com</p>
+                  <h3 className="font-semibold text-lg mb-1 text-gray-900">Email</h3>
+                  <p className="text-gray-600">Mirabelbc@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex space-x-4 pt-4">
-                <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center text-white hover:shadow-lg transition transform hover:scale-110">
+                <a 
+                  href="https://www.instagram.com/mirabel_alain?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center text-white hover:shadow-lg transition transform hover:scale-110"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center text-white hover:shadow-lg transition transform hover:scale-110">
+                <a 
+                  href="https://www.facebook.com/mirabelalain" 
+                  className="w-12 h-12 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 flex items-center justify-center text-white hover:shadow-lg transition transform hover:scale-110"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <Facebook className="w-5 h-5" />
                 </a>
               </div>
