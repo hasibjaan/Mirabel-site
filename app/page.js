@@ -10,13 +10,13 @@ import About from '../components/About'
 import Stories from '../components/Stories';
 import Testimonial from '../components/Testimonial';
 import Contact from '../components/Contact';
+import MapSection from '../components/MapSection';
 import Footer from '../components/Footer'
 
 export default function MirabelSalon() {
-
   return (
     <div className="min-h-screen bg-white">
-      
+
       <Header />
 
       <Hero />
@@ -28,6 +28,8 @@ export default function MirabelSalon() {
       <Stories />
 
       <Testimonial />
+
+      <MapSection />
 
       <Contact />
 

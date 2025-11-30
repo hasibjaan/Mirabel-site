@@ -2,46 +2,10 @@
 
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
+import { storiesContent } from '../lib/content';
 
 export default function Stories() {
-    const stories = [
-        {
-            id: 1,
-            title: 'Our latest news',
-            image: '/images/story-1.jpg',
-            alt: 'Beauty and hair styling showcase'
-        },
-        {
-            id: 2,
-            title: 'De toutes beautés',
-            image: '/images/story-2.jpg',
-            alt: 'Collage of beauty products and diversity'
-        },
-        {
-            id: 3,
-            title: 'Essentiality of Beauty',
-            image: '/images/story-3.jpg',
-            alt: 'Diverse group of women celebrating beauty'
-        },
-        {
-            id: 4,
-            title: 'Beauty Transformation',
-            image: '/images/story-4.jpg',
-            alt: 'Before and after beauty transformations'
-        },
-        {
-            id: 5,
-            title: 'Luxury Experience',
-            image: '/images/story-5.jpg',
-            alt: 'Luxury salon experience and treatments'
-        },
-        {
-            id: 6,
-            title: 'Client Stories',
-            image: '/images/story-6.jpg',
-            alt: 'Client success stories and testimonials'
-        }
-    ];
+    const { label, title, description, stories } = storiesContent;
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -146,33 +110,32 @@ export default function Stories() {
     }, [currentIndex, stories.length]);
 
     return (
-        <section id="stories" className="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
+        <section id="stories" className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                     {/* Left side - Text content */}
-                    <div className="flex-1 lg:flex-[2] w-full z-10">
-                        <p className="text-sm uppercase tracking-wider text-pink-600 font-semibold mb-4">
-                            Discover
-                        </p>
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-                            Our beautiful stories
-                        </h2>
-                        <p className="text-gray-700 text-lg leading-relaxed">
-                            At Mirabel, we believe beauty is a journey of self-discovery and empowerment.
-                            Every story we create is a celebration of individuality, confidence, and the
-                            transformative power of self-care. Join us in crafting moments that reflect
-                            your unique essence and inner radiance.
-                        </p>
+                    <div className="lg:flex-[2] max-w-none flex flex-col justify-center space-y-6">
+                        <div className="space-y-4">
+                            <span className="inline-block px-4 py-2 bg-pink-100 text-pink-600 rounded-full text-sm font-semibold">
+                                {label}
+                            </span>
+                            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+                                {title}
+                            </h2>
+                            <p className="text-gray-600 text-lg leading-relaxed">
+                                {description}
+                            </p>
+                        </div>
                     </div>
 
                     {/* Right side - Image slider */}
                     <div className="flex-1 lg:flex-1 w-full">
                         <div className="relative">
                             {/* Fade overlay on left side - widened to blend with text */}
-                            <div className="absolute left-0 top-0 bottom-0 w-32 lg:w-80 bg-gradient-to-r from-pink-50 via-pink-50/80 to-transparent pointer-events-none z-30"></div>
+                            <div className="absolute left-0 top-0 bottom-0 w-32 lg:w-80 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-30"></div>
 
                             {/* Fade overlay on right side */}
-                            <div className="absolute right-0 top-0 bottom-0 w-24 lg:w-32 bg-gradient-to-l from-pink-50 to-transparent pointer-events-none z-30"></div>
+                            <div className="absolute right-0 top-0 bottom-0 w-24 lg:w-32 bg-gradient-to-l from-white to-transparent pointer-events-none z-30"></div>
 
                             {/* Scrollable slider container */}
                             <div

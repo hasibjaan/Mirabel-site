@@ -1,17 +1,11 @@
 import { Sparkles, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { headerContent } from '../lib/content';
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'Services', href: '#services' },
-        { name: 'About', href: '#about' },
-        { name: 'Stories', href: '#stories' },
-        { name: 'Testimonials', href: '#testimonials' },
-        { name: 'Contact', href: '#contact' },
-    ];
+    const { brandName, navLinks, bookButton } = headerContent;
 
     const smoothScroll = (e, targetId) => {
         e.preventDefault();
@@ -52,7 +46,7 @@ export default function Header() {
                     <div className="flex items-center space-x-2 cursor-pointer" onClick={(e) => smoothScroll(e, '#home')}>
                         <Sparkles className="w-6 h-6 text-pink-500" />
                         <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-                            Mirabel
+                            {brandName}
                         </span>
                     </div>
 
@@ -74,7 +68,7 @@ export default function Header() {
                         onClick={(e) => smoothScroll(e, '#contact')}
                         className="hidden md:block px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full hover:shadow-lg transition transform hover:scale-105 font-medium"
                     >
-                        Book Now
+                        {bookButton}
                     </button>
 
                     {/* Mobile Menu Button */}

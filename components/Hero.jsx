@@ -2,33 +2,12 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { heroContent } from '../lib/content';
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [
-    {
-      type: 'image',
-      src: '/images/hero-1.jpg',
-      alt: 'Elegant beauty salon interior',
-      title: 'Mirabel Beauty Centre',
-      subtitle: 'Where beauty meets elegance. Experience luxury treatments in a serene, modern atmosphere.'
-    },
-    {
-      type: 'image',
-      src: '/images/hero-2.jpg',
-      alt: 'Professional beauty treatment',
-      title: 'Expert Care & Styling',
-      subtitle: 'Our professional stylists are dedicated to bringing out your inner radiance with personalized care.'
-    },
-    {
-      type: 'image',
-      src: '/images/hero-3.jpg',
-      alt: 'Relaxing spa environment',
-      title: 'A Sanctuary of Peace',
-      subtitle: 'Escape the daily rush and immerse yourself in a world of tranquility and rejuvenation.'
-    }
-  ];
+  const { slides, buttons } = heroContent;
 
   // Function to go to next slide - wrapped in useCallback to be used in useEffect
   const nextSlide = useCallback(() => {
@@ -88,8 +67,8 @@ export default function Hero() {
             <div
               key={index}
               className={`col-start-1 row-start-1 flex flex-col items-center transition-all duration-1000 ease-in-out ${index === currentSlide
-                  ? 'opacity-100 translate-y-0 blur-0'
-                  : 'opacity-0 translate-y-8 blur-sm pointer-events-none'
+                ? 'opacity-100 translate-y-0 blur-0'
+                : 'opacity-0 translate-y-8 blur-sm pointer-events-none'
                 }`}
             >
               <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight drop-shadow-lg">
@@ -107,13 +86,13 @@ export default function Hero() {
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full text-lg font-semibold hover:shadow-xl transition transform hover:scale-105 border border-transparent"
           >
-            Book Appointment
+            {buttons.bookNow}
           </button>
           <button
             onClick={() => document.getElementById('services').scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-full text-lg font-semibold hover:bg-white hover:text-pink-600 transition"
           >
-            View Services
+            {buttons.learnMore}
           </button>
         </div>
       </div>
