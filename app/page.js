@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { Menu, X, Phone, Mail, MapPin, Clock, Instagram, Facebook, Sparkles, Star, Heart, Scissors, Palette } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, Clock, Sparkles, Star, Heart, Scissors, Palette } from 'lucide-react';
 
 import Header from '../components/Header';
 import Hero from '../components/Hero';

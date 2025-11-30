@@ -116,7 +116,7 @@ export default function About() {
               {stats.map((stat, idx) => (
                 <div key={idx} className="text-center">
                   <div className="text-3xl font-bold text-pink-600 mb-2">
-                    {useCountUp(stat.value, statsInView).toLocaleString()}{stat.value >= 1000 ? '+' : ''}
+                    {useCountUp(stat.value, statsInView).toLocaleString()}{(stat.value === 10 || stat.value === 15 || stat.value >= 1000) ? '+' : ''}
                   </div>
                   <div className="text-gray-600">{stat.label}</div>
                 </div>

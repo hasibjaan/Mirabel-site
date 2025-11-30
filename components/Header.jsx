@@ -45,7 +45,7 @@ export default function Header() {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center space-x-2 cursor-pointer" onClick={(e) => smoothScroll(e, '#home')}>
                         <Sparkles className="w-6 h-6 text-pink-500" />
-                        <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+                        <span className="text-3xl font-bold font-serif bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
                             {brandName}
                         </span>
                     </div>
